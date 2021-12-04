@@ -11,3 +11,4 @@ Zachęcamy do odwiedzenia profili członków zespołu, w celu zapoznania się z 
 **Uczestnicy**:
 
 - [Aleksandra Aleksandrowicz](https://github.com/coderscamp-aleksandra)
+- [Weronika Luteńko](https://github.com/vera98d/)
