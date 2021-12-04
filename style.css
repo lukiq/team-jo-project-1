@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --basicFontSize: 16px;
+  --red: #e85c54;
+  --orange: #ea943f;
+  --orange1: #f27757;
+  --lightOrange: #f1decb;
+  --grey: rgb(80, 80, 80);
+  --white: rgb(241, 227, 227);
+  --green: #1d7f69;
+  --green1: #17a184;
+}
+
+body {
+  font-size: var(--basicFontSize);
+  background-color: var(--lightOrange);
+}
+
+p,
+ul,
+ol,
+li {
+  color: var(--grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--orange);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-size: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--orange1);
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+button,
+input {
+  border-radius: 0.4em;
+  transition: 0.5s;
+  padding: 0.7em 1em;
+}
+
+button {
+  font-size: var(--basicFontSize);
+  border: 0 solid black;
+  color: var(--white);
+  background: var(--orange1);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button.orange {
+  background: var(--orange1);
+}
+
+button:hover {
+  background-color: var(--orange);
+}
+
+button.green {
+  background: var(--green);
+}
+
+button.green:hover {
+  background: var(--green1);
+}
+
+input {
+  border: 2px solid var(--lightOrange);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--orange);
+  color: var(--orange1);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+span {
+  color: var(--red);
+}
