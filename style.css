@@ -43,14 +43,17 @@ h6 {
 
 h1 {
   font-size: 2.5rem;
+  margin-bottom: 0.3em;
 }
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 0.2em;
 }
 
 h3 {
   font-size: 1.6rem;
+  margin-bottom: 0.1em;
 }
 
 h4 {
