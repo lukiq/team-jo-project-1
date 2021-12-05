@@ -16,5 +16,8 @@
   },
   "lint-staged": {
     "**/*.{js,css,html,md,json}": "prettier --write"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
   }
 }
