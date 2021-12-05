@@ -6,7 +6,8 @@
 }
 
 :root {
-  --basicFontSize: 16px;
+  --basicFontSize: 14px;
+  --maxWidth: 1940px;
   --red: #e85c54;
   --orange: #ea943f;
   --orange1: #f27757;
@@ -17,6 +18,7 @@
   --green1: #17a184;
 }
 
+html,
 body {
   font-size: var(--basicFontSize);
   background-color: var(--lightOrange);
@@ -27,6 +29,7 @@ ul,
 ol,
 li {
   color: var(--grey);
+  line-height: 1.4rem;
 }
 
 h1,
@@ -121,5 +124,74 @@ ol {
 }
 
 span {
-  color: var(--red);
+  color: var(--orange1);
+}
+
+i.fa,
+i.fas,
+i.far {
+  font-size: 1.6rem;
+  color: var(--green);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+i.fa:hover,
+i.fas:hover,
+i.far:hover {
+  color: var(--green1);
+}
+
+/* sections' styles */
+header {
+  background: var(--orange);
+}
+
+header > * {
+  color: var(--white);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--maxWidth);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+.chooseIngredients,
+.latestRecipes {
+  padding: 1em;
+}
+
+/* media queries */
+@media screen and (orientation: landscape) and (min-width: 740px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .chooseIngredients {
+    width: 70%;
+  }
+
+  .latestRecipes {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  :root {
+    --basicFontSize: 16px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  :root {
+    --basicFontSize: 18px;
+  }
 }
