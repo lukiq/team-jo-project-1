@@ -4,22 +4,19 @@ class Header {
   }
   currentTime() {
     let date = new Date();
+
     return date.toLocaleTimeString();
   }
 
   render(props) {
-    props = {
-      title: "Hello Again!",
-      date: this.currentTime(),
-    };
-
     this.ref.innerHTML = `
     <header>
       <a href="">Logo</a>
-      <h1>${props.title}</h1>
-      <span class="clock">${props.date}</span>
+      <h1>Hello Again</h1>
+      <span class="clock">${this.currentTime()}</span>
     </header>
   `;
+    setTimeout(() => this.render(props), 1000);
   }
 }
 
